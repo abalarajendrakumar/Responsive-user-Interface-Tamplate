@@ -1,0 +1,408 @@
+<html>
+			<head>
+				<title>Dheko/Meeting</title>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                   	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<script src="js/jquery2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+    <link rel="stylesheet" href="css/dheko.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+ <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <style>
+  	
+  	body{
+  		background-image: url('./images/landingPage.png');
+  	}
+  	
+  	@media(min-width:768px) {
+    body {
+        margin-top: 50px;
+    }
+    /*html, body, #wrapper, #page-wrapper {height: 100%; overflow: hidden;}*/
+}
+
+#wrapper {
+    padding-left: 0;    
+}
+
+#page-wrapper {
+    width: 100%;        
+    padding: 0;
+    background-color: #fff;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 22px 10px;
+    }
+}
+
+/* Top Navigation */
+
+.top-nav {
+    padding: 0 15px;
+}
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: #fff;
+    background-color: #1a242f;
+}
+
+.top-nav>.open>.dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-top: 0;
+    /*border: 1px solid rgba(0,0,0,.15);*/
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 80px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        border-top: 1px rgba(0,0,0,.5) solid;
+        overflow-y: auto;
+        background-color: #00ADB5;
+        /*background-color: #5A6B7D;*/
+        bottom: 0;
+        color:white; 
+        overflow-x: hidden;
+        
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+        color:white;
+        font-size: 15px; 
+        font-family: Helvetica;
+       
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+         border-left: 3px #FFFFFF solid;
+        
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+    border-bottom: 1px rgba(0,0,0,.3) solid;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    /*color: #999;*/
+    color: #FFFFFF4A;
+    opacity: 0.11;    
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+.navbar .nav > li > a > .label {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  right: 6px;
+  font-size: 10px;
+  font-weight: normal;
+  min-width: 15px;
+  min-height: 15px;
+  line-height: 1.0em;
+  text-align: center;
+  padding: 2px;
+}
+#profile{
+ 
+ width:220px; height:50px; opacity: 0.11; background-color:#D8D8D8; color:white; 
+
+}
+.navbar .nav > li > a:hover > .label {
+  top: 10px;
+}
+
+.navbar-brand {
+    padding: 5px 15px;
+}
+.dash_title{
+  color:#00ADB5;
+  font-size:34px;
+  font-family: Helvetica Neue LT Pro;
+}
+#dash_button1{
+border-radius: 10px; font-size: 20px; font-family:Helvetica; margin-top:10px; opacity: 1; color:white; width:240px; padding:12px; height:58px; background-color: #00ADB5;
+}
+#dash_button2{
+  border-radius: 10px; font-size: 20px; font-family:Helvetica; margin-top:10px; opacity: 1; color:white; width:240px; padding:12px; height:58px;  background-color: #FFFFFF; color:#00ADB5;
+}
+#dash_button3{
+  border-radius: 10px; font-size: 20px; font-family:Helvetica; margin-top:10px; opacity: 1; color:white; width:249px; padding:12px; height:58px; background-color: #FFFFFF; color:#00ADB5;
+}
+.upcomming{
+    width:196px; height:24px; font-family: Helvetica; font-size:19px; text-decoration: none; border-bottom: 1px solid #00ADB5; opacity: 1; color:#00ADB5; font-weight: bold; text-align:left;
+  }
+  
+  .day{
+    font-weight: bold;  font-size:15px;color:#343638; padding-top:5px;  padding-left:5px;
+  }
+  .time{
+    font-weight: bold; color:#707070;  font-family: Helvetica; padding-left:5px; font-size:14px;
+  }
+  #nav-profile-tab{
+    font-family: Helvetica; font-weight: bold; font-size: 20px; color:#00ADB5;  padding-bottom:10px; text-decoration: none;
+  }
+  #nav-profile-tab:hover{
+     border-bottom:2px solid #00ADb5; padding-bottom:10px;
+  }
+   #nav-contact-tab{
+   
+     font-family: Helvetica; font-weight: bold; font-size: 20px; color:#00ADB5;  padding-bottom:10px; margin-left:20px; text-decoration: none;
+   
+  } 
+ #nav-contact-tab:hover{
+  border-bottom:2px solid #00ADb5; padding-bottom:10px; 
+}
+.project-tab .nav-link:hover {
+    border: none;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #0062cc;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body{
+  background-image: url('./images/landingPage.png'); background-size: cover; background-repeat: no-repeat;
+}
+  </style>
+ <script type="text/javascript">
+   $(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+    $(".side-nav .collapse").on("hide.bs.collapse", function() {                   
+        $(this).prev().find(".fa").eq(1).removeClass("fa-angle-right").addClass("fa-angle-down");
+    });
+    $('.side-nav .collapse').on("show.bs.collapse", function() {                        
+        $(this).prev().find(".fa").eq(1).removeClass("fa-angle-down").addClass("fa-angle-right");        
+    });
+})    
+
+ </script>
+
+ </head>
+<body  >	
+<div id="throbber" style="display:none; min-height:120px;"></div>
+<div id="noty-holder"></div>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar  navbar-fixed-top" role="navigation" >
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar" ></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar" ></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="./images/Asset 1@2x-100.jpg"  id="brandlogo" alt="LOGO" style="width:110px; height:30px;  ">
+            </a>
+
+        </div>
+        <!-- Top Menu Items -->
+         
+    
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+         
+            <ul class="nav navbar-nav side-nav">
+              <li> <a type="button" class="btn " id="profile" style=" ">Dav Joe</a></li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-1">Home </a>
+                    
+                </li>
+                <li>
+                    <a href="#" data-target="#submenu-2">Meeting</a>
+                    
+                </li>
+                <li>
+                    <a href="#">Schedule</a>
+                </li>
+                <li>
+                    <a href="#"> Recording</a>
+                </li>
+                <li>
+                    <a href="#"> Setting</a>
+                </li>
+            </ul>
+             <form class="navbar-form navbar-right" action="#" >
+      <div class="form-group">
+        <input type="text" class=" search-query form-control" placeholder="Enter Meeting ID to join Meeting" style="width:320px;  ">
+      </div>
+  
+    </form>
+     <form class="navbar-form navbar-right" action="#">
+      <div class="form-group">
+        <input type="text" class=" search-query form-control" placeholder="Search here" style="width:320px; ">
+      </div>
+      
+    </form>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+      
+  <!-- /#page-wrapper -->
+      <br>
+        <div class="container" style="padding:30px;" >
+            <!-- Page Heading -->
+            <div class="row " id="main"  >
+                <div class="col-sm-12 col-md-12 " id="content" style="text-align:center; ">
+                    <p class="dash_title"> Dev Joe's Personal Room</p>
+                </div>
+            </div><br><br>
+            <div class="row " id="main1" >
+               <br>
+              <section id="tabs" class="project-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist" style="border:none;">
+                                
+                                <a class="nav-item nav-link  " id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Upcomming Meetings</a>
+                                <a class="nav-item nav-link " id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Past Meetings</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                           
+                            <div class="tab-pane fade  " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                              <br><br>
+                                <table class="table" cellspacing="0">
+                                    <thead class="thead-light"> 
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Topic</th>
+                                            <th>Duration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Feb Jun 20 01:29 PM IST</td>
+                                            <td>Back to Office Meeting</td>
+                                            <td>20 min</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feb Jun 20 01:29 PM IST</td>
+                                            <td>Back to Office Meeting</td>
+                                            <td>20 min</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feb Jun 20 01:29 PM IST</td>
+                                            <td>Back to Office Meeting</td>
+                                            <td>20 min</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feb Jun 20 01:29 PM IST</td>
+                                            <td>Back to Office Meeting</td>
+                                            <td>20 min</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                               <br><br>
+                                <table class="table" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                             <th>Date</th>
+                                            <th>Topic</th>
+                                            <th>Duration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Feb Jun 20 01:29 PM IST</td>
+                                            <td>SEO Report Meeting</td>
+                                            <td>20 min</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feb Jun 20 01:29 PM IST</td>
+                                            <td>Dheko Apps Meeting</td>
+                                            <td>20 min</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feb Jun 20 01:29 PM IST</td>
+                                            <td>Back to Office Meeting</td>
+                                            <td>20 min</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feb Jun 20 01:29 PM IST</td>
+                                            <td>Back to Office Meeting</td>
+                                            <td>20 min</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+               <br>
+            </div>
+
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+   
+
+</body>
+</html>

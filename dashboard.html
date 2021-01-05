@@ -1,0 +1,149 @@
+<html>
+			<head>
+				<title>Dheko/Dashboard</title>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                   	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<script src="js/jquery2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+ <script src="vendor/jquery/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/dheko.css"/>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <style>
+  	
+  	
+
+  body{
+    background-image: url('./images/landingPage.png'); background-size: cover; background-repeat: no-repeat;
+  }
+  </style>
+ <script type="text/javascript">
+   $(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+    $(".side-nav .collapse").on("hide.bs.collapse", function() {                   
+        $(this).prev().find(".fa").eq(1).removeClass("fa-angle-right").addClass("fa-angle-down");
+    });
+    $('.side-nav .collapse').on("show.bs.collapse", function() {                        
+        $(this).prev().find(".fa").eq(1).removeClass("fa-angle-down").addClass("fa-angle-right");        
+    });
+})    
+
+ </script>
+
+ </head>
+<body >	
+<div id="throbber" style="display:none; min-height:120px;"></div>
+<div id="noty-holder"></div>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar  navbar-fixed-top" role="navigation" style="">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="./images/Asset 1@2x-100.jpg" id="brandlogo" alt="LOGO" style=" ">
+            </a>
+
+        </div>
+        <!-- Top Menu Items -->
+         
+    
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+         
+            <ul class="nav navbar-nav side-nav">
+              <li> <a type="button" class="btn " id="profile" style=" ">Dav Joe</a></li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-1">Home </a>
+                    
+                </li>
+                <li>
+                    <a href="#" data-target="#submenu-2">Meeting</a>
+                    
+                </li>
+                <li>
+                    <a href="#">Schedule</a>
+                </li>
+                <li>
+                    <a href="#"> Recording</a>
+                </li>
+                <li>
+                    <a href="#"> Setting</a>
+                </li>
+            </ul>
+             <form class="navbar-form navbar-right" action="#" style="">
+      <div class="form-group">
+        <input type="text" class=" search-query form-control" placeholder="Enter Meeting ID to join Meeting" style="width:320px;  ">
+      </div>
+  
+    </form>
+     <form class="navbar-form navbar-right" action="#">
+      <div class="form-group">
+        <input type="text" class=" search-query form-control" placeholder="Search here" style="width:320px; ">
+      </div>
+      
+    </form>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+      
+  <!-- /#page-wrapper -->
+      <br>
+        <div class="container" style="padding:30px;" >
+            <!-- Page Heading -->
+            <div class="row " id="main"  >
+                <div class="col-sm-12 col-md-12 " id="content" style="text-align:center; ">
+                    <p class="dash_title"> Dev Joe's Personal Room</p>
+                </div>
+            </div><br><br>
+            <div class="row " id="main1" >
+                <div class="col-md-7 " id="con1"  >
+                    <div class="inner_box" style="text-align: center;">
+                      
+                           <a type="button" class="btn"  id="dash_button1" src="#" >Meet Now!</a>
+                           <br><br>
+                           <a type="button" class="btn btn btn-secondary" id="dash_button2"  src="#" >Join a Meeting</a>
+                            <br><br>
+                           <a type="button" class="btn btn btn-secondary" id="dash_button3"  src="#" >Schedule</a>
+                         </div>
+                    </div>
+                
+                <div class="col-md-1" id="con2">
+                </div>
+                <div class="col-md-4 " id="con3" style="" >
+                    <br>
+                    <p class="upcomming">Upcomming Meeting</p>
+                    <h5 class="day">Thursday, Jun25, 2020</h5>
+                    <section  class="card1" >
+                      <h5 class="day">Justin Meeting</h5>
+                      <p class="time">10.00 AM - 11.00 AM</p>
+                      <p class="time">11.00 AM - 12.00 AM THU,US/PASIFIC</p>
+
+                    </section >
+                    <section  class="card2" >
+                      <h5 class="day">Peter's Event</h5>
+                        <p class="time">10.00 AM - 11.00 AM</p>
+                      <p class="time">11.00 AM - 12.00 AM THU,US/PASIFIC</p>
+                    </section>
+                    <section  class="card3" >
+                      <h5 class="day">John Meeting</h5>
+                        <p class="time">10.00 AM - 11.00 AM</p>
+                      <p class="time">11.00 AM - 12.00 AM THU,US/PASIFIC</p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+   
+
+</body>
+</html>
